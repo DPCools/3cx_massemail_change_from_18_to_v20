@@ -34,33 +34,37 @@ Output: The script prints out the updated email addresses and saves the modified
 Usage
 To use the script, simply call the update_email_address function with the input XML file and the desired output file:
 
-python
+```python
 update_email_address('data.xml', 'data_modified.xml')
-Example
-Before:
+```
+##Example
+###Before:
 
-xml
+```xml
 <Extension>
-    <EmailAddress>george.gransden@bigmotoringworld.co.uk</EmailAddress>
-    <FirstName>Andre</FirstName>
+    <EmailAddress>Firsname.Surname@email_domain.com</EmailAddress>
+    <FirstName>Jeff</FirstName>
 </Extension>
 <Extension>
-    <EmailAddress>spare@bigmotoringworld.co.uk</EmailAddress>
-    <FirstName>Sheffield PartEx</FirstName>
+    <EmailAddress>spare@email_domain.com</EmailAddress>
+    <FirstName>SiteLocation deparment</FirstName>
 </Extension>
-After:
+```
+###After:
 
-xml
+```xml
 <Extension>
-    <EmailAddress>george.gransden+Andre@bigmotoringworld.co.uk</EmailAddress>
-    <FirstName>Andre</FirstName>
+    <EmailAddress>Firsname.Surname+Jeff@email_domain.com</EmailAddress>
+    <FirstName>Jeff</FirstName>
 </Extension>
 <Extension>
-    <EmailAddress>spare+Sheffield.PartEx@bigmotoringworld.co.uk</EmailAddress>
-    <FirstName>Sheffield PartEx</FirstName>
+    <EmailAddress>spare+SiteLocation.deparment@email_domain.com</EmailAddress>
+    <FirstName>SiteLocation deparment</FirstName>
 </Extension>
 <Extension>
-    <EmailAddress>spare+Sheffield.PartEx.1@bigmotoringworld.co.uk</EmailAddress>
-    <FirstName>Sheffield PartEx</FirstName>
+    <EmailAddress>spare+SiteLocation.deparment.1@email_domain.com</EmailAddress>
+    <FirstName>SiteLocation deparment</FirstName>
 </Extension>
+```
+
 This script helps ensure that email addresses in your XML file are updated correctly based on the associated first names, avoiding duplicates by incrementing a counter if necessary.
