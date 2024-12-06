@@ -31,14 +31,15 @@ Save the Modified XML: After processing all <Extension> elements, the script wri
 
 Output: The script prints out the updated email addresses and saves the modified XML to a specified output file.
 
-Usage
+## Usage
 To use the script, simply call the update_email_address function with the input XML file and the desired output file:
 
 ```python
 update_email_address('data.xml', 'data_modified.xml')
 ```
-##Example
-###Before:
+
+## Example
+### Before:
 
 ```xml
 <Extension>
@@ -50,7 +51,7 @@ update_email_address('data.xml', 'data_modified.xml')
     <FirstName>SiteLocation deparment</FirstName>
 </Extension>
 ```
-###After:
+### After:
 
 ```xml
 <Extension>
